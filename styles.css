@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Sunflower:300');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Sunflower', sans-serif;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body{
+  background: #f2f2f2;
+}
+
+.container{
+  width: 100%;
+  padding: 0 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.sub-container{
+  max-width: 500px;
+  height: 350px;
+  margin: 0 auto;
+  display: flex;
+  background: #fff;
+  box-shadow: 0 0 5px 2px rgba(0,0,0,0.125);
+}
+
+.sub-container .banner-img{
+  width: 220px;
+  height: 100%;
+}
+
+.sub-container .banner-img img{
+  width: 100%;
+  height: 100%;
+}
+
+.sub-container .login-form{
+  max-width: 280px;
+  height: 100%;
+  text-align: center;
+}
+
+.inner-login-form{
+  padding: 40px 35px 0;
+}
+
+.login-form h1{
+  color: #6e8d30;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.login-form .label{
+  color: #524a4a;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.login-form .input{
+  margin: 5px 0 15px;
+  width: 100%;
+  padding: 8px;
+}
+
+.login-form .forgot a{
+  color: #6e8d30;
+  font-size: 18px;
+}
+
+.btn{
+  margin-top: 9.4%;
+  width: 100%;
+  padding: 12px;
+  background: #6e8d30;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+ .desk-view{
+    display: block;
+  }
+  .mob-view{
+    display: none;
+  }
+
+@media screen and (max-width: 500px){
+  .sub-container{
+    flex-direction: column;
+    max-width: 300px;
+    height: auto;
+  }
+  .sub-container .banner-img{
+    width: 100%;
+    height: 200px;
+  }
+  .desk-view{
+    display: none;
+  }
+  .mob-view{
+    display: block;
+  }
+  .inner-login-form{
+    padding: 20px 35px 0;
+  }
+  .sub-container .login-form{
+    max-width: 100%;
+  }
+  .login-form h1{
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .login-form .input{
+    margin-bottom: 10px;
+  }
+  .btn{
+    margin-top: 20px;
+    padding: 10px;
+  }
+}
